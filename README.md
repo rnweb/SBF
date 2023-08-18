@@ -1,5 +1,6 @@
 # Desenho da Arquitetura de uma Plataforma de Dados
-![image](https://github.com/rnweb/SBF/assets/47749456/7c9b1dd6-d378-4f9e-a562-fd223a1d95f3)
+![image](https://github.com/rnweb/SBF/assets/47749456/f56cbd43-4577-4277-aa80-ebce7134dc32)
+
 
 Synapse Analytics Detalhado:
 
@@ -10,7 +11,7 @@ Com base no caso de uso, considerando um propósito específico, surge a visão 
 
 # Fluxo de Dados
 1 - Captura de Alterações de Dados (Stream):
-A essência para que os sistemas de origem se mantenham atualizados reside na captura de dados de alterações (CDC - Change Data Capture). Através de conectores do Debezium, é possível estabelecer conexões com variados sistemas de origem e monitorar as alterações em tempo real. Estes conectores têm a habilidade de capturar e traduzir as mudanças, gerando eventos de sistemas diversos baseados em bancos de dados relacionais (RDBMS).
+A essência para que os sistemas de origem se mantenham atualizados reside na captura de dados de alterações (CDC - Change Data Capture). Através de conectores do Debezium, é possível estabelecer conexões com variados sistemas de origem e monitorar as alterações em tempo real. Estes conectores têm a habilidade de capturar e traduzir as mudanças, gerando eventos de sistemas diversos baseados em bancos de dados relacionais (RDBMS). A instalação de um conector Debezium requer um sistema Kafka Connect.
 
 2 - Processo de Extração / Captura de Dados:
 Os conectores extraem com precisão os dados alterados, encaminhando os eventos resultantes ao Event Hub no ecossistema Azure. O Event Hub está apto para receber volumes substanciais de informações provenientes de múltiplas fontes.
